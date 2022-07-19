@@ -6,12 +6,13 @@ import { Constants } from 'expo';
 const homeScreen = () => {
     return (
       <View style={styles.container}>
-        <View style={styles.fixedRatio} />
+        <View style={[styles.right, styles.top,   { backgroundColor: "powderblue" }]}/>
+        <View style={[styles.left, styles.top, { backgroundColor: "powderblue" }]}/>
+        <View style={[styles.bottom, styles.right, { backgroundColor: "powderblue" }]}/>
+        <View style={[styles.bottom, styles.left, { backgroundColor: "powderblue" }]}/>
       </View>
-      
     );
 }
-
 
 
   const styles = StyleSheet.create({
@@ -26,5 +27,17 @@ const homeScreen = () => {
       backgroundColor: 'rebeccapurple',
       flex: 1,
       aspectRatio: 1
+    },
+    right: {
+     right: 50, 
+    },
+    top: {
+      top: 50,
+    },
+    bottom: {
+      bottom:50,
+    },
+    left: {
+      left:50,
     },
   });
