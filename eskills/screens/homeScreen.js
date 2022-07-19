@@ -1,12 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { Constants } from 'expo';
 
 const homeScreen = () => {
     return (
-      <View style={styles.container}>
-        <View style={styles.fixedRatio} />
+      <View style>
+        <Text>hello</Text>
       </View>
       
     );
